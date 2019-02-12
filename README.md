@@ -54,9 +54,9 @@ def upload_file():
 
 To call the function without the website.  Load up the class.
 Create these folders which is set in the initializing of the class
-historianpath  - Finished directory
-dbfiles - Store the DB Files to get processed
-tempfiles - Staging area where everything gets parsed and processed
+- historianpath  - Finished directory
+- dbfiles - Store the DB Files to get processed
+- tempfiles - Staging area where everything gets parsed and processed
 
 run init() to start the process.
 ```
