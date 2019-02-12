@@ -7,12 +7,9 @@ class HistorianImport():
     Initialize import by calling init() function
     '''
     def __init__(self, historianpath, dbfiles, tempfiles):
-        # Path of complete files
-        self.historian_path = historianpath
-        # Path of DB files to parse
-        self.db_files = dbfiles
-        # Temp space
-        self.temp_files = tempfiles
+        self.historian_path = historianpath # Path of complete files
+        self.db_files = dbfiles # Path of DB files to parse
+        self.temp_files = tempfiles # Temp space
 
     def accessNamesMod(self, prefix):
         '''
@@ -94,9 +91,9 @@ class HistorianImport():
                     topic = [
                         line[2], # Topic
                         line[1], # ApplicationName
-                        '$local', #ComputerName
+                        '$local', # ComputerName
                         60000, # TimeOut
-                        'No', #LateData
+                        'No', # LateData
                         60, # IdleDuration
                         120 # Processing Interval
                     ]
@@ -133,7 +130,6 @@ class HistorianImport():
                         sf.writerow(line)
 
             split_file.close()
-
 
     '''
     Start writing out to Historian Dump file with correct format
