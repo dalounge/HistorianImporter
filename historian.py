@@ -66,8 +66,6 @@ class HistorianImport():
         '''
         with open(os.path.join(self.temp_files, 'IOAccess_mod.csv'), 'r') as f:
             c = csv.reader(f)
-            io_servers = []
-            topic = []
             master_io_servers = []
             master_topic = []
             for line in c:
